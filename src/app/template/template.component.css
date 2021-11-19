@@ -1,9 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
-*{
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  min-width: 10%;
+  min-height: 100%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 100px;
+  padding: 1px 0px;
+  height: 100px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: start;
+    float: none;
+  }
+  .sidebar{
+    width: 100px;
+  }
+  .content{
+    float: right;
+  }
+
+}
+/* *{
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
+} */
 .sidebar{
   position: fixed;
   width: 240px;
@@ -11,13 +75,12 @@
   height: 100%;
   background: #1e1e1e;
   transition: all .5s ease;
-  margin-top: -2em;
-  /* overflow:auto; */
+  margin-top: -1.5em;
 }
 .sidebar header{
   font-size: 28px;
   color: white;
-  line-height: 70px;
+  /* line-height: 70px; */
   text-align: center;
   background: #1b1b1b;
   user-select: none;
@@ -25,10 +88,10 @@
 }
 .sidebar a{
   display: block;
-  height: 65px;
+  height: 60px;
   width: 100%;
   color: white;
-  line-height: 65px;
+  line-height: 50px;
   padding-left: 30px;
   box-sizing: border-box;
   /* border-bottom: 1px solid black; */
@@ -41,10 +104,6 @@ a.active,a:hover{
   border-left: 5px solid #b93632;
   color: #b93632;
 }
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
 .sidebar a i{
   font-size: 23px;
   margin-right: 16px;
@@ -78,6 +137,9 @@ label #cancel{
 #check:checked ~ .sidebar{
   left: 0;
 }
+#check:checked ~ .content{
+  margin-left: 250px;
+}
 #check:checked ~ label #btn{
   margin-left: 245px;
   opacity: 0;
@@ -88,40 +150,46 @@ label #cancel{
   opacity: 1;
   visibility: visible;
 }
-@media(max-width : 860px){
-  .sidebar{
-    height: auto;
-    width: 70px;
-    left: 0;
-    margin: 100px 0;
-  }
-  header,#btn,#cancel{
-    display: none;
-  }
-  span{
-    position: absolute;
-    margin-left: 23px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .sidebar a{
-    height: 60px;
-  }
-  .sidebar a i{
-    margin-left: -10px;
-  }
-  a:hover {
-    width: 200px;
-    background: inherit;
-  }
-  .sidebar a:hover span{
-    opacity: 1;
-    visibility: visible;
-  }
+
+a i:hover{
+
+  border-radius: 50%;
+  position: relative;
+  color: #04AA6D;
+  transition: 300ms;
+  font-size: 36px;
+  display: inline-block;
+
 }
-#main-content {
-    float: left;
-    width: 100%;
-    padding-left: 300px;
-    background: #2373DE;
+
+#main_wrap {
+  /* border:5px double #04AA6D; */
+  box-shadow: 5px 10px 10px #04AA6D;
   }
+  
+  #sidebar{
+          float:left;
+      }
+  
+  /* #content{
+      margin-left:250px;   
+  } */
+  .main-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+.demo-bg {
+  /* background: rgb(24, 139, 206);   */
+  background-color: #4bb5df;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.content{
+  color: #000000;
+}

@@ -7,12 +7,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material/material.module';
 import { TemplateComponent } from './template/template.component';
 import { SignupComponent } from './signup/signup.component';
+import { SampletempComponent } from './sampletemp/sampletemp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateComponent,
-    SignupComponent
+    SignupComponent,
+    SampletempComponent
   ],
   imports: [
     BrowserModule,
