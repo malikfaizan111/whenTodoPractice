@@ -15,7 +15,7 @@
 .sidebar a {
   display: block;
   color: black;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ div.content {
 }
 .sidebar a{
   display: block;
-  height: 60px;
+  height: 58px;
   width: 100%;
   color: white;
   line-height: 50px;
@@ -152,10 +152,9 @@ label #cancel{
 }
 
 a i:hover{
-
   border-radius: 50%;
   position: relative;
-  color: #04AA6D;
+  color: #fffc39;
   transition: 300ms;
   font-size: 36px;
   display: inline-block;
@@ -181,8 +180,8 @@ a i:hover{
   
 .demo-bg {
   /* background: rgb(24, 139, 206);   */
-  background-color: #4bb5df;
-  opacity: 0.6;
+  /* background-color: #4bb5df; */
+  opacity: 0.25;
   position: absolute;
   left: 0;
   top: 0;
@@ -191,5 +190,10 @@ a i:hover{
 
 }
 .content{
-  color: #000000;
+  color: #050505;
+  opacity: 1;
+}
+.fas fa-bell:hover{
+  box-shadow: 5px 5px 2px green;
+  font-size: 50px;
 }
