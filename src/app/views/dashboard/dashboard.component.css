@@ -1,0 +1,41 @@
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+/* .dish:hover{
+    color: chartreuse;
+} */
+h1{
+     /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Shippori Antique B1';
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 4px 5px #000000;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Roboto' ;
+    font-weight: 15px;
+}
+.dash{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 120px;
+    width: auto;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 8px 5px #888888;
+    background-color: rgb(235, 231, 211);
+    
+}
+.dash:hover{
+    background-color: #3EB595;
+    color: white;
+    margin: -5px;
+    
+}

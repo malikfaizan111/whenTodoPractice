@@ -19,6 +19,7 @@ import { ReportsComponent } from './views/reports/reports.component';
 import { RegisterComponent } from './views/register/register.component';
 import { LogoutComponent } from './views/logout/logout.component';
 import { DepartmentsComponent } from './views/departments/departments.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,9 +41,10 @@ import { DepartmentsComponent } from './views/departments/departments.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    FormsModule,
+    MaterialModule,
     FlexLayoutModule,
-    MaterialModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

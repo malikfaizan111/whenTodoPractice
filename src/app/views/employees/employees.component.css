@@ -1,0 +1,21 @@
+h1{
+    /* font-family: 'Roboto', sans-serif; */
+   font-family: 'Shippori Antique B1';
+   font-size: 45px;
+   text-align: center;
+   text-shadow: 1px 1px 4px #000000;
+   color: black;
+}
+.sec3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+mat-form-field{
+/* border: 1px solid black; */
+height: 50px;
+box-shadow: 1px 1px 3px 2px rgb(30, 37, 37);
+border-radius: 5px;
+background-color: rgb(235, 231, 211);
+}
+

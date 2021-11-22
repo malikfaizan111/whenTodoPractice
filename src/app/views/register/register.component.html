@@ -1,1 +1,99 @@
-<p>register works!</p>
+<div class="container">
+    <h1>Employee Registration</h1>
+        <!-- <div class="sec1">
+            <form class="search-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>search</mat-label>
+                  <input class="toolbar-search" type="text" matInput>
+                  <mat-placeholder>Search</mat-placeholder>
+                <mat-icon matSuffix style="font-size: 1.2em">search</mat-icon>
+                </mat-form-field>
+              </form>
+        </div> -->
+    <div>
+        <form>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label for="employeeid">Employee Id</mat-label>
+                    <input type="text" id="employeeid" matInput placeholder="Enter Valid Email">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label for="fullname">Full Name</mat-label>
+                    <input type="text" id="fullname" matInput placeholder="Enter Full Name">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label for="emailid">Email:</mat-label>
+                    <input type="text" id="emailid" matInput placeholder="Enter Email Address">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label for="pnumber">Phone Number:</mat-label>
+                    <input type="text" id="pnumber" matInput placeholder="Enter Phone number">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label for="password">password:</mat-label>
+                    <input type="text" id="password" matInput placeholder="Enter password">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label for="cpass">Confirm password:</mat-label>
+                    <input type="text" id="cpass" matInput placeholder="Enter confirm password">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label>Select Role</mat-label>
+                    <mat-select>
+                      <mat-option value="Admin">Admin</mat-option>
+                      <mat-option value="Supervisor">Supervisor</mat-option>
+                      <mat-option value="User">User</mat-option>
+                      <mat-option value="ITUser">IT-User</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Select Department</mat-label>
+                    <mat-select>
+                      <mat-option value="Admin">SysNet Department</mat-option>
+                      <mat-option value="Supervisor">Development Department</mat-option>
+                      <mat-option value="User">Digital Marketing Department</mat-option>
+                      <mat-option value="ITUser">SQA Department</mat-option>
+                      <mat-option value="ITUser">IT Department</mat-option>
+                      <mat-option value="ITUser">Compliance & Audit </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label>Select Team </mat-label>
+                    <mat-select>
+                      <mat-option value="Admin">Team IT 1</mat-option>
+                      <mat-option value="Supervisor">Team IT 2</mat-option>
+                      <mat-option value="User">Team IT 3</mat-option>
+                      <mat-option value="ITUser">Team IT 4</mat-option>
+                      <mat-option value="ITUser">Team IT</mat-option>
+                      <mat-option value="ITUser">Operations</mat-option>
+                      <mat-option value="ITUser">Compliance & Audit</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Select Designation</mat-label>
+                    <mat-select>
+                      <mat-option value="Admin">SysNet Department</mat-option>
+                      <mat-option value="Supervisor">Development Department</mat-option>
+                      <mat-option value="User">Digital Marketing Department</mat-option>
+                      <mat-option value="ITUser">SQA Department</mat-option>
+                      <mat-option value="ITUser">IT Department</mat-option>
+                      <mat-option value="ITUser">Compliance & Audit </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="form-group">
+                <button mat-raised-button style="margin-left: -30px;">Submit</button>
+                <button mat-raised-button style="margin-left: 30px;">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+

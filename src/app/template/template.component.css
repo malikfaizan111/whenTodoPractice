@@ -100,10 +100,10 @@ div.content {
   font-family: 'Open Sans', sans-serif;
   transition: all .5s ease;
 }
-a.active,a:hover{
+/* a.active,a:hover{
   border-left: 5px solid #b93632;
   color: #b93632;
-}
+} */
 .sidebar a i{
   font-size: 23px;
   margin-right: 16px;
@@ -161,10 +161,10 @@ a i:hover{
 
 }
 
-#main_wrap {
+/* #main_wrap {
   /* border:5px double #04AA6D; */
-  box-shadow: 5px 10px 10px #04AA6D;
-  }
+  /* box-shadow: 5px 10px 10px #04AA6D;
+  } */
   
   #sidebar{
           float:left;
@@ -181,7 +181,7 @@ a i:hover{
 .demo-bg {
   /* background: rgb(24, 139, 206);   */
   /* background-color: #4bb5df; */
-  opacity: 0.25;
+  opacity: 0.60;
   position: absolute;
   left: 0;
   top: 0;
