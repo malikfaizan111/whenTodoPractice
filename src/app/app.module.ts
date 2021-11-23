@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -20,6 +20,7 @@ import { RegisterComponent } from './views/register/register.component';
 import { LogoutComponent } from './views/logout/logout.component';
 import { DepartmentsComponent } from './views/departments/departments.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     ReportsComponent,
     RegisterComponent,
     LogoutComponent,
-    DepartmentsComponent
+    DepartmentsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { FormsModule } from '@angular/forms';
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

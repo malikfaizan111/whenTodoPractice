@@ -10,42 +10,43 @@
                 </mat-form-field>
               </form>
         </div> -->
-    <div>
-        <form>
+    <div class="reg">
+        <form (ngSubmit)="onRegister()" #f="ngForm">
             <div class="form-group">
                 <mat-form-field appearance="fill">
                     <mat-label for="employeeid">Employee Id</mat-label>
-                    <input type="text" id="employeeid" matInput placeholder="Enter Valid Email">
+                    <input type="text" name="employeeid" #employeeid="ngModel" ngModel required id="employeeid" matInput >
+                    <!-- <span class="help-block" *ngIf="!employeeid.valid && employeeid.touched">Please Enter Employee Id</span> -->
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label for="fullname">Full Name</mat-label>
-                    <input type="text" id="fullname" matInput placeholder="Enter Full Name">
+                    <input type="text" name="fullname" ngModel required id="fullname" matInput>
                 </mat-form-field>
             </div>
             <div class="form-group">
                 <mat-form-field appearance="fill">
                     <mat-label for="emailid">Email:</mat-label>
-                    <input type="text" id="emailid" matInput placeholder="Enter Email Address">
+                    <input type="email" name="email" ngModel required email id="emailid" matInput>
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label for="pnumber">Phone Number:</mat-label>
-                    <input type="text" id="pnumber" matInput placeholder="Enter Phone number">
+                    <input type="text" name="phonenumber" ngModel required id="pnumber" matInput >
                 </mat-form-field>
             </div>
             <div class="form-group">
                 <mat-form-field appearance="fill">
                     <mat-label for="password">password:</mat-label>
-                    <input type="text" id="password" matInput placeholder="Enter password">
+                    <input type="password" name="password" ngModel required id="password" matInput >
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label for="cpass">Confirm password:</mat-label>
-                    <input type="text" id="cpass" matInput placeholder="Enter confirm password">
+                    <input type="password" name="confirmpassword" ngModel required id="cpass" matInput >
                 </mat-form-field>
             </div>
             <div class="form-group">
                 <mat-form-field appearance="fill">
                     <mat-label>Select Role</mat-label>
-                    <mat-select>
+                    <mat-select name="role" ngModel required >
                       <mat-option value="Admin">Admin</mat-option>
                       <mat-option value="Supervisor">Supervisor</mat-option>
                       <mat-option value="User">User</mat-option>
@@ -54,7 +55,7 @@
                   </mat-form-field>
                   <mat-form-field appearance="fill">
                     <mat-label>Select Department</mat-label>
-                    <mat-select>
+                    <mat-select name="departments" ngModel required>
                       <mat-option value="Admin">SysNet Department</mat-option>
                       <mat-option value="Supervisor">Development Department</mat-option>
                       <mat-option value="User">Digital Marketing Department</mat-option>
@@ -67,7 +68,7 @@
             <div class="form-group">
                 <mat-form-field appearance="fill">
                     <mat-label>Select Team </mat-label>
-                    <mat-select>
+                    <mat-select name="team" ngModel required>
                       <mat-option value="Admin">Team IT 1</mat-option>
                       <mat-option value="Supervisor">Team IT 2</mat-option>
                       <mat-option value="User">Team IT 3</mat-option>
@@ -79,7 +80,7 @@
                   </mat-form-field>
                   <mat-form-field appearance="fill">
                     <mat-label>Select Designation</mat-label>
-                    <mat-select>
+                    <mat-select name="designation" ngModel required>
                       <mat-option value="Admin">SysNet Department</mat-option>
                       <mat-option value="Supervisor">Development Department</mat-option>
                       <mat-option value="User">Digital Marketing Department</mat-option>
@@ -89,9 +90,9 @@
                     </mat-select>
                   </mat-form-field>
             </div>
-            <div class="form-group">
-                <button mat-raised-button style="margin-left: -30px;">Submit</button>
-                <button mat-raised-button style="margin-left: 30px;">Cancel</button>
+            <div class="form-group" style="display: flex; justify-content: center; gap: 50px;">
+                <button mat-raised-button type="submit" [disabled]="!f.valid">Submit</button>
+                <button mat-raised-button (click)="onCancel()" >Cancel</button>
             </div>
         </form>
     </div>

@@ -1,9 +1,19 @@
+.bodypic{
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    opacity: 0.75;
+}
 h1{
     /* font-family: 'Roboto', sans-serif; */
    font-family: 'Shippori Antique B1';
    font-size: 60px;
    text-align: center;
    text-shadow: 2px 2px 4px #000000;
+   position: relative;
+   top: 100px;
 }
 .container{
     display: block;
@@ -12,23 +22,26 @@ h1{
 .sec1{
     display: flex;
 }
-.form-group{
-    display: flex;
-}
 .reg{
     display: inline-block;
     text-align: center;
     border: 2px solid black;
-    margin: 10px auto 0px 362px;
+    margin: 10px auto 0px 440px;
     padding: 50px;
-    background-color: rgba(235, 231, 211, 1);
+    background-color: rgba(235, 231, 211, 0.66);
     box-shadow: 4px 4px 8px 8px black;
     border-radius: 20px;
+    position: relative;
+    top: 100px;
+    width: 450px;
+}
+matInput{
+    width: 50px;
 }
 mat-form-field{
-    margin: 4px 10px;
     background-color: rgba(235, 231, 211, 0.85);
-    height: 55px;
+    height: 65px;
+    width: 100%;
     border-radius: 5px;
 
 }

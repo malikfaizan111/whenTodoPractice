@@ -1,0 +1,32 @@
+<div class="bodypic">
+    <div class="container">
+        <h1>Employee Registration</h1>
+
+        <div class="reg">
+            <form (ngSubmit)="onSubmit()" #f="ngForm">
+                <div>
+                    <mat-form-field appearance="outline" >
+                        <mat-label for="emailid">Email:</mat-label>
+                        <input type="email" name="email" #email="ngModel" ngModel required email id="emailid" matInput>
+                    </mat-form-field>
+                    <span *ngIf="!f.valid && email.touched ">Enter Email here</span>
+                </div>
+                <br>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label for="password">password:</mat-label>
+                        <input type="password" name="password" #password="ngModel" width="250px" ngModel required id="password" matInput >
+                    </mat-form-field>
+                    <span *ngIf="!f.valid && password.touched ">Enter password Here</span>
+
+                </div>
+                <div class="form-group" style="display: flex; justify-content: center; gap: 30px;">
+                    <button mat-raised-button type="submit" [disabled]="!f.valid">Submit</button>
+                    <button mat-raised-button>Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+</div>
